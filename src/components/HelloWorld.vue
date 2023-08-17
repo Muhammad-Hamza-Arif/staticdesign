@@ -37,7 +37,7 @@
     </header>
 
     <!-- hero-section -->
-    <div class="mt-32 mx-auto max-w-7xl px-8 max-h-[578px]">
+    <div class="mt-32 mx-auto max-w-7xl px-8 max-h-[578px] text-start">
       <h1 class="font-bold text-7xl max-w-3xl mx-auto text-blue-600">
         A design conference for the dark side.
       </h1>
@@ -75,7 +75,7 @@
 
     <!-- 2nd-hero-section -->
     <div class="max-w-7xl mx-auto px-8 mt-48">
-      <div class="max-w-3xl pr-24">
+      <div class="max-w-3xl pr-24 text-start">
         <h2 class="text-4xl font-medium text-blue-600">
           Our three day schedule is jam-packed with brilliant, creative, evil
           geniuses.
@@ -89,8 +89,8 @@
       <div class="max-w-7xl mx-auto mt-14">
         <div class="grid grid-cols-3 gap-x-8">
           <section>
-            <h3 class="text-2xl font-semibold text-blue-900">April 4</h3>
-            <p class="mt-1.5 text-blue-900">
+            <h3 class="text-2xl font-semibold text-blue-900 text-start">April 4</h3>
+            <p class="mt-1.5 text-blue-900 text-start">
               The first day of the conference is focused on dark patterns for
               ecommerce.
             </p>
@@ -183,8 +183,8 @@
             </div>
           </section>
           <section>
-            <h3 class="text-2xl font-semibold text-blue-900">April 4</h3>
-            <p class="mt-1.5 text-blue-900">
+            <h3 class="text-2xl font-semibold text-blue-900 text-start">April 4</h3>
+            <p class="mt-1.5 text-blue-900 text-start">
               The first day of the conference is focused on dark patterns for
               ecommerce.
             </p>
@@ -277,8 +277,8 @@
             </div>
           </section>
           <section>
-            <h3 class="text-2xl font-semibold text-blue-900">April 4</h3>
-            <p class="mt-1.5 text-blue-900">
+            <h3 class="text-2xl font-semibold text-blue-900 text-start">April 4</h3>
+            <p class="mt-1.5 text-blue-900 text-start">
               The first day of the conference is focused on dark patterns for
               ecommerce.
             </p>
@@ -424,16 +424,10 @@
     <!-- last-section -->
     <section class="mt-20">
       <div class="mx-auto max-w-7xl px-8">
-        <div
-          class=" bg-indigo-50  rounded-5xl px-16 py-36"
-        >
-          <div
-            class=" mx-auto grid  gap-x-32 gap-y-14 max-w-none grid-cols-2"
-          >
-            <div>
-              <p
-                class=" text-4xl font-medium text-blue-900"
-              >
+        <div class="bg-indigo-50 rounded-5xl px-16 py-36">
+          <div class="mx-auto grid gap-x-32 max-w-4xl grid-cols-2">
+            <div class="max-w-4xl text-start">
+              <p class="text-4xl font-medium text-blue-900">
                 Stay up to date
               </p>
               <p class="mt-4 text-lg text-blue-900">
@@ -441,7 +435,7 @@
                 notified when tickets go on sale.
               </p>
             </div>
-            <form>
+            <form class="text-start">
               <h3 class="text-lg font-semibold text-blue-900">
                 Sign up to our newsletter
               </h3>
@@ -451,7 +445,7 @@
                 <input
                   type="email"
                   placeholder="Email address"
-                  class="-my-2.5 flex-auto bg-transparent pl-6 pr-2.5 text-slate-900 placeholder:text-slate-400"
+                  class="-my-2.5 flex-auto bg-transparent pl-6 text-slate-900 placeholder:text-slate-400"
                 /><button
                   class="rounded-2xl bg-blue-600 p-4 font-semibold text-white hover:bg-blue-500"
                   type="submit"
