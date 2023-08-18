@@ -73,6 +73,59 @@
       </div>
     </div>
 
+    <div class="max-w-7xl mx-auto px-8 mt-20 flex">
+      <div class="flex flex-col text-start ">
+        <div class="ml-4 pl-8 border-l-2 border-slate-500">
+          <span class="text-sm leading-6 text-blue-600 font-mono font-semibold"
+            >Opening Day</span
+          >
+          <p class="text-2xl text-blue-900 font-semibold tracking-tight mb-8">
+            April 4
+          </p>
+        </div>
+        <br />
+        <div class="ml-4 pl-8 border-l-2 border-slate-500">
+          <span class="text-sm leading-6 font-mono font-semibold"
+            >Speakers & Workshops</span
+          >
+          <p class="text-2xl text-blue-900 font-semibold tracking-tight mb-8">
+            April 5
+          </p>
+        </div>
+        <br />
+        <div class="ml-4 pl-8 border-l-2 border-slate-500">
+          <span class="text-sm leading-6 font-mono font-semibold"
+            >Interviews</span
+          >
+          <p class="text-2xl text-blue-900 font-semibold tracking-tight mb-8">
+            April 6
+          </p>
+        </div>
+      </div>
+      <div class="grid grid-cols-3 gap-4">
+        <div
+          v-for="i in items"
+          :key="i"
+          class="block max-w-[18rem] rounded-lg bg-white"
+        >
+          <div>
+            <img class="rounded-t-lg" :src="i.image" alt="" />
+          </div>
+          <div class="justify-start text-left mb-20">
+            <h3
+              class="mt-8 font-display text-xl font-bold tracking-tight text-slate-900"
+            >
+              {{ i.name }}
+            </h3>
+            <p class="mt-1 text-base tracking-tight text-slate-500">
+              {{ i.title }}
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
     <!-- 2nd-hero-section -->
     <div class="max-w-7xl mx-auto px-8 mt-48">
       <div class="max-w-3xl pr-24 text-start">
@@ -423,8 +476,8 @@
 
     <!-- last-section -->
     <section class="mt-20">
-      <div class="mx-auto max-w-7xl px-8">
-        <div class="bg-indigo-50 rounded-5xl px-16 py-36">
+      <div class="mx-auto max-w-7xl px-8 rounded-3xl">
+        <div class="bg-indigo-100 px-16 py-36">
           <div class="mx-auto grid gap-x-32 max-w-4xl grid-cols-2">
             <div class="max-w-4xl text-start">
               <p class="text-4xl font-medium text-blue-900">
@@ -445,7 +498,7 @@
                 <input
                   type="email"
                   placeholder="Email address"
-                  class="-my-2.5 flex-auto bg-transparent pl-6 text-slate-900 placeholder:text-slate-400"
+                  class="-my-2.5 flex-auto bg-transparent pl-6 pr-2.5 text-slate-900 placeholder:text-slate-400"
                 /><button
                   class="rounded-2xl bg-blue-600 p-4 font-semibold text-white hover:bg-blue-500"
                   type="submit"
@@ -499,6 +552,48 @@ export default {
   name: "HelloWorld",
   props: {
     msg: String,
+    data(){
+      return{
+        items: [
+        {
+          name: "Steven McHail",
+          title: "Designer at Globex Corporation",
+          image:
+            "https://keynote.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsteven-mchail.4e94472e.jpg&w=640&q=75",
+        },
+        {
+          name: "Jaquelin Isch",
+          title: "UX Design at InGen",
+          image:
+            "https://keynote.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjaquelin-isch.880e5248.jpg&w=640&q=75",
+        },
+        {
+          name: "Dianne Guilianelli",
+          title: "General Manager at Initech",
+          image:
+            "https://keynote.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdianne-guilianelli.b4c5891f.jpg&w=640&q=75",
+        },
+        {
+          name: "Ronni Cantadore",
+          title: "Design Engineer at Weyland-Yutani",
+          image:
+            "https://keynote.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fronni-cantadore.0d04b7fe.jpg&w=640&q=75",
+        },
+        {
+          name: "Erhart Cockrin",
+          title: "Product Lead at Cyberdyne",
+          image:
+            "https://keynote.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ferhart-cockrin.3697fef6.jpg&w=640&q=75",
+        },
+        {
+          name: "Parker Johnson",
+          title: "UI Designer at MomCorp",
+          image:
+            "https://keynote.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fparker-johnson.3f6d7276.jpg&w=640&q=75",
+        },
+      ],
+      }
+    }
   },
 };
 </script>
